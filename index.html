@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>                     <!--Tells browser it's an HTML file-->
+<html>                              <!--Opening tag for HTML-->
+    <head>                          
+        <title>Joshua Doh</title>     <!--Title of page (browser tab)-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Images/Favicons/icons8-home-30.png" type="image/png">
+                                <!-- Add file path before file name-->
+    </head>  
+
+    <style>
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .center {           /*Can also be an ID*/
+            text-align: center;
+        }
+
+        a.center_link {
+            text-align: center;
+        }
+
+        h1.blue-border {
+            border-width: 5px;
+            border-style: dashed;
+            border-color: blue;
+            border-radius: 100px;    /* Rounded borders*/
+            width: 100%;
+            height: 50px;
+        }
+    </style>
+
+    <body>                          
+        <h1 id="top" class="center blue-border">Joshua Doh</h1>
+
+        <a href="#bottom" class="center_link">Go to bottom</a>
+            <!--Will link to location below-->
+
+        <p>
+            <b>Hi, my name is Joshua Doh.</b> 
+            <br>    <!--Break between the paragraph-->
+            I am currently teaching myself <i>computer programming</i>.
+        </p>
+        <hr>        <!--"Horizontal rule (line across)"--> 
+        
+
+        <p>
+            <a href="https://linkedin.com/in/joshua-doh" target="_blank"> LinkedIn Profile </a>
+        </p>
+
+        <a href="https://linkedin.com/in/joshua-doh">      
+            <img                               
+                src="images/josh_headshot.jpg"
+                height="200"
+                alt="Photo of Joshua Doh"
+                >
+        </a>
+
+
+
+        <h3>Recent experiences</h3>
+        <ol>
+            <li>EnVest</li>
+            <li>Commonfund Capital</li>
+        </ol>
+
+
+        <h3>Favorite courses at Vanderbilt University</h3>
+        <ul>
+            <code>
+            <li>Corporate Strategy</li>
+            <li>Energy Transitions & Society</li>
+            <li>Python Programming</li>
+            </code>
+        </ul>
+        
+        <a href="2nd Page.html"> 2nd page here</a>
+
+            <!--Not an absolute link. Goes to the specific file in the same folder not the webpage. -->
+        </p>
+
+
+        <div>
+            <form action="" method="get">
+                <div>
+                <input required name="Name" type="text" value="John Doe" placeholder="Enter full name"">
+                </div>
+
+                <div>
+                <textarea required name="Feedback" cols="30" rows="10" placeholder="Enter your feedback here">
+I think the website needs to fix...
+                </textarea>
+                </div>
+
+                <div>
+                    <select name="selected_option">
+                        <option value="" disabled="disabled"> - Disabled - </option>
+                        <option value="default choice" selected="selected"> Choice 0</option>
+                        <option value="choice 1"> Choice 1</option>
+                        <option value="choice 2"> Choice 2</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+        <p id="bottom"> This is the bottom of the page.</p>
+    </body>
+</html>                     <!--Closing tag for HTML-->
